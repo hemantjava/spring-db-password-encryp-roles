@@ -13,4 +13,14 @@ public class WelcomeController {
     return ResponseEntity.ok("<h1>Welcome</h2>");
   }
 
+  @GetMapping("/admin")
+  public ResponseEntity getMessageAdmin(){
+    return ResponseEntity.ok("<h1>Welcome Admin</h2>");
+  }
+
+  @GetMapping("/user")
+  public ResponseEntity getMessageUser(){
+    return ResponseEntity.ok("<h1>Welcome User</h2>");
+  }
+
 }
